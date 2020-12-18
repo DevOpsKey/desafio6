@@ -1,0 +1,11 @@
+pip
+flask
+flask_sqlalchemy
+PyMySQL==0.10.0
+redis==3.5.3
+rq==1.4.3
+flask_restful
+flask-marshmallow
+marshmallow-sqlalchemy
+mysql-connector-python
+redis
