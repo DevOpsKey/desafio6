@@ -26,9 +26,9 @@ def hello():
 def fila():
     try:
         valida = redis.StrictRedis(
-        host = 'IP_REDIS',
+        host = '34.204.189.20',
         port = '6379',
-        password = 'SENHA_REDIS',
+        password = 'RBOJ9cCNoGCKhlEBwQLHri1g+atWgn4Xn4HwNUbtzoVxAYxkiYBi7aufl4MILv1nxBqR4L6NNzI0X6cE',
         charset = "utf-8")
 
         valida.llen('client list')
@@ -40,7 +40,7 @@ def fila():
 
 def banco():
     try:
-        con = mysql.connector.connect(host='IP_BANCO',user='USER_BANCO',password='SENHA_BANCO')
+        con = mysql.connector.connect(host='34.204.189.20',user='root',password='Email12@QW')
         db_info = con.get_server_info()
         print ("Conectada ao servidor Mysql",db_info)
         return "OK"
@@ -50,9 +50,9 @@ def banco():
 def redis2():
     try:
         r = redis.StrictRedis(
-        host = 'IP_REDIS',
+        host = '34.204.189.20',
         port = '6379',
-        password = 'SENHA_REDIS',
+        password = 'RBOJ9cCNoGCKhlEBwQLHri1g+atWgn4Xn4HwNUbtzoVxAYxkiYBi7aufl4MILv1nxBqR4L6NNzI0X6cE',
         charset = "utf-8")
         
         r.set('foo','bar')
