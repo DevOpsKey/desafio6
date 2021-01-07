@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: crisinho
+  name: cristiano-com-mais-raiva
   labels:
     app: teste
 spec:
@@ -16,11 +16,11 @@ spec:
     spec:
       containers:
       - name: healthcheck
-        image: dkcorreriadocker/flask:4.7
+        image: dkcorreriadocker/flask:4.8
         env:
                 - name: SQLALCHEMY_DATABASE_URI
-                  value: "mysql+pymsql://user_BD:senha_BD@IP_INSTANCIA:3306"
+                  value: "mysql+pymsql://ccosta:Email12@QW@34.204.189.20:3306"
                 - name: REDISTOGO_URL
-                  value: "redis://senha_REDIS@IP_INSTANCIA:6379"
+                  value: "redis://RBOJ9cCNoGCKhlEBwQLHri1g+atWgn4Xn4HwNUbtzoVxAYxkiYBi7aufl4MILv1nxBqR4L6NNzI0X6cE@34.204.189.20:6379"
         ports:
         - containerPort: 5000
